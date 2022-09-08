@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@700&display=swap");
+
+.container {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 0.75fr 3fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "top-header top-header"
+    "bottom-header bottom-header"
+    "banner banner"
+    "header header"
+    "sidebar products";
+}
+
+.top-header {
+  grid-area: top-header;
+  background: whitesmoke;
+  text-align: right;
+  font-family: "Poppins", sans-serif;
+}
+
+.bottom-header {
+  grid-area: bottom-header;
+  background: white;
+  text-align: center;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.banner {
+  grid-area: banner;
+  background: whitesmoke;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  grid-area: header;
+  background-color: white;
+  text-align: left;
+  padding-left: 50px;
+  font-family: "Poppins", sans-serif;
+}
+.sidebar {
+  grid-area: sidebar;
+  background: whitesmoke;
+  padding-left: 40px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.1fr 0.2fr 1.7fr;
+  gap: 0px 0px;
+  grid-area: products;
+  font-family: "Poppins", sans-serif;
+}
+
+.image {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image img {
+  max-height: 200px;
+  max-width: 100px;
+  object-fit: contain;
+}
+
+.description {
+  text-align: left;
+  padding-left: 20px;
+  text-shadow: 1px;
+  font-family: "Ubuntu", sans-serif;
+}
