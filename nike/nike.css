@@ -1,88 +1,62 @@
 .container {
-    display: grid; 
-    grid-auto-columns: 1fr; 
-    grid-template-columns: 0.75fr 1.7fr; 
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 5fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "top-header top-header"
-      "bottom-header bottom-header"
-      "banner banner"
-      "header header"
-      "sidebar products"; 
-  }
-  
-  .top-header { 
-    grid-area: top-header;
-    background: whitesmoke;
-}
-  
-  .bottom-header {
-     grid-area: bottom-header; 
-     background: gray;
-}
-  
-  .banner {
-     grid-area: banner; 
-     background: whitesmoke;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 0.75fr 3fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 5fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "top-header top-header"
+    "bottom-header bottom-header"
+    "banner banner"
+    "header header"
+    "sidebar products";
 }
 
-  .header { 
-    grid-area: header;
-} 
-  .sidebar { 
-    grid-area: sidebar; 
-    background: whitesmoke;
+.top-header {
+  grid-area: top-header;
+  background: whitesmoke;
+}
+
+.bottom-header {
+  grid-area: bottom-header;
+  background: gray;
+}
+
+.banner {
+  grid-area: banner;
+  background: whitesmoke;
+}
+
+.header {
+  grid-area: header;
+}
+.sidebar {
+  grid-area: sidebar;
+  background: whitesmoke;
 }
 
 .products {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1.1fr 0.2fr 1.7fr; 
-    gap: 0px 0px; 
-    grid-template-areas: 
-      "productimage1 productimage2 productimage3"
-      "productdesc1 productdesc2 productdesc3"; 
-    grid-area: products; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1.1fr 0.2fr 1.7fr;
+  gap: 0px 0px;
+  grid-area: products;
 }
 
-.productimage1 {
-    grid-area: productimage1;
-}
-.productimage2 {
-    grid-area: productimage2; 
-}
-.productimage3 {
-    grid-area: productimage3; 
-}
-.productdesc1 {
-    grid-area: productdesc1;
-}
-.productdesc2 {
-    grid-area: productdesc2;
-}
-.productdesc3 {
-    grid-area: productdesc3;
-}
-.top-header {
-    grid-area: top-header;
-}
-
-#product-display {
-}
-
-.product-detail {
-}
-
-.product-image {
+.image {
   background: white;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.product-image img {
-    height 175 px;
-    width: 100;
-    object-fit: contain;
+.image img {
+  max-height: 200px;
+  max-width: 100px;
+  object-fit: contain;
+}
+
+.description {
+  justify-content: center;
+  align-items: center;
 }
