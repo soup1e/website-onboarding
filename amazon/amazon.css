@@ -3,7 +3,7 @@ body {
   grid-template-rows: 75px 30px 1fr;
 }
 
-main-header {
+#main-header {
   background: white;
 }
 
