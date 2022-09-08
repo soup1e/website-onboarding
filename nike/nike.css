@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:wght@700&display=swap");
+
 .container {
   display: grid;
   grid-auto-columns: 1fr;
@@ -15,24 +17,38 @@
 .top-header {
   grid-area: top-header;
   background: whitesmoke;
+  text-align: right;
+  font-family: "Poppins", sans-serif;
 }
 
 .bottom-header {
   grid-area: bottom-header;
-  background: gray;
+  background: white;
+  text-align: center;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
 .banner {
   grid-area: banner;
   background: whitesmoke;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .header {
   grid-area: header;
+  background-color: white;
+  text-align: left;
+  padding-left: 50px;
+  font-family: "Poppins", sans-serif;
 }
 .sidebar {
   grid-area: sidebar;
   background: whitesmoke;
+  padding-left: 40px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .products {
@@ -41,6 +57,7 @@
   grid-template-rows: 1.1fr 0.2fr 1.7fr;
   gap: 0px 0px;
   grid-area: products;
+  font-family: "Poppins", sans-serif;
 }
 
 .image {
@@ -57,6 +74,8 @@
 }
 
 .description {
-  justify-content: center;
-  align-items: center;
+  text-align: left;
+  padding-left: 20px;
+  text-shadow: 1px;
+  font-family: "Ubuntu", sans-serif;
 }
